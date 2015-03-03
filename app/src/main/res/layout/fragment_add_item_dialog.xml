@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentEnd="false">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/FragmentDialogLayout">
+
+            <!-- Picture -->
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/image_height"
+                android:id="@+id/ivPlacePic"
+                android:src="@android:drawable/ic_menu_mapmode"
+             />
+
+            <!-- Name/title -->
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Place Name"
+                android:text="A new place"
+                android:textSize="@dimen/text_size"
+                android:layout_marginLeft="@dimen/horizontal_margin"
+                android:id="@+id/etPlaceName"/>
+
+            <!-- Description -->
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:textSize="@dimen/text_size"
+                android:layout_marginLeft="@dimen/horizontal_margin"
+                android:id="@+id/etDescription" />
+
+            <!-- Latitude -->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Latitude:"
+                android:textSize="@dimen/text_size"
+                android:layout_marginLeft="@dimen/horizontal_margin"
+                android:id="@+id/tvLat"/>
+
+            <!-- Longitude -->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Longitude:"
+                android:textSize="@dimen/text_size"
+                android:layout_marginLeft="@dimen/horizontal_margin"
+                android:id="@+id/tvLong"/>
+
+            <!-- Timestamp -->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Time:"
+                android:textSize="@dimen/text_size"
+                android:layout_marginLeft="@dimen/horizontal_margin"
+                android:id="@+id/tvTime"/>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_item_cancel"
+                    android:id="@+id/cancelButton"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fragment_item_ok"
+                    android:id="@+id/okButton"
+                    android:layout_weight="1" />
+
+                </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

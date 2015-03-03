@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorSecondary"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ScrollView
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/toolbar2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/FragmentDialogLayout">
+
+            <!-- Picture -->
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/image_height"
+                android:id="@+id/ivPlacePicDet"
+                android:src="@android:drawable/ic_menu_camera"
+                android:onClick="takePicture"
+                />
+
+            <!-- Name/title -->
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Place Name"
+                android:textSize="@dimen/text_size"
+                android:layout_marginLeft="@dimen/horizontal_margin"
+                android:id="@+id/etPlaceNameDet"/>
+
+            <!-- Description -->
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:textSize="@dimen/text_size"
+                android:layout_marginLeft="@dimen/horizontal_margin"
+                android:id="@+id/etDescriptionDet" />
+
+            <!-- Longitude -->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Longitude:"
+                android:textSize="@dimen/text_size"
+                android:layout_marginLeft="@dimen/horizontal_margin"
+                android:id="@+id/tvLongDet"/>
+
+            <!-- Latitude -->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Latitude:"
+                android:textSize="@dimen/text_size"
+                android:layout_marginLeft="@dimen/horizontal_margin"
+                android:id="@+id/tvLatDet"/>
+
+            <!-- Timestamp -->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Time:"
+                android:textSize="@dimen/text_size"
+                android:layout_marginLeft="@dimen/horizontal_margin"
+                android:id="@+id/tvTimeDet"/>
+
+            <!-- Timestamp -->
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="35dp"
+                android:gravity="center_vertical"
+                android:text="Visited"
+                android:textSize="@dimen/text_size"
+                android:layout_marginLeft="@dimen/horizontal_margin"
+                android:id="@+id/tvVisitedDet"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change data"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/buttonChangeData" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/item_set_visited"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/buttonVisited" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delete this place"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/buttonDeletePlace" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

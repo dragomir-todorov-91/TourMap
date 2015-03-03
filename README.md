@@ -1,18 +1,14 @@
-materialSkeleton
+Tour Map Application
 ================
-This Project was build with the Android Studio RC 1 
-(by the time I uploaded this, it was available in the canary channel: 
-http://tools.android.com/download/studio/canary )
+Tour Map is an application developed for the MentorMate Academy course. 
+It uses Google Maps, Google Places API and Parse.com for online syncing
 
-
-I needed to create an empty Android Project which uses an Android 5 Toolbar and a Navigation Drawer. 
-It should be downwards compatible down to the Android API 15
-
-This Skeleton does exactly fit that purpose.
-
-
-If you want to use it, just clone the repository, rename the project and its Application ID and use it for your purpose.
-
-Push-Requests are welcome!
+The application allows the following things:
+•To view a map of the world
+•To add his current location on the map and give it a name and description
+•To search for a place and add a marker for it
+•To be notified about the closest place he/she added on the map
+•To edit a place and add a picture
 
 Best regards!
+Dragomir Todorov 03/2015

@@ -1,6 +1,6 @@
 #Tour Map Application
 
-Tour Map is an application developed for the MentorMate Academy course. <br>
+Tour Map is an Android application developed for the MentorMate Academy course. <br>
 It uses Google Maps, Google Places API and Parse.com for online syncing <br>
 
 The application allows the following things:
